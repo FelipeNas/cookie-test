@@ -3,8 +3,8 @@
     console.log(document.cookie)
     if (document.cookie.split(';').filter((item) => item.includes('agegate=true')).length) {
         document.getElementById("teste").append("Você tem mais de 18 anos")
-        document.cookie = "agegate=true;";
     } else {
       document.getElementById("teste").append("Você é de menor")
+      document.cookie = "agegate=true;";
     }
 </script>
